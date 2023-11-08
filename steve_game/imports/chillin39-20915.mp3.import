@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chillin39-20915.mp3-02966fa2aea4e6051ab3074f38e33e08.mp3str"
+
+[deps]
+
+source_file="res://imports/chillin39-20915.mp3"
+dest_files=[ "res://.import/chillin39-20915.mp3-02966fa2aea4e6051ab3074f38e33e08.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

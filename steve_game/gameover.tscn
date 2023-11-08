@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fonts/Cave-Story.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/Some Time Later.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://scripts_2/buttonquit.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 250
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -19.0
+margin_top = -43.0
+margin_right = 1353.0
+margin_bottom = 766.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 139.0
+margin_top = 53.0
+margin_right = 1176.0
+margin_bottom = 462.0
+custom_fonts/font = SubResource( 1 )
+text = "Game Over!"
+valign = 1
+
+[node name="buttonquit" type="Button" parent="."]
+margin_left = 390.0
+margin_top = 428.0
+margin_right = 873.0
+margin_bottom = 636.0
+custom_fonts/font = SubResource( 2 )
+text = "Play Again"
+script = ExtResource( 3 )
+
+[connection signal="pressed" from="buttonquit" to="buttonquit" method="_on_buttonquit_pressed"]
